@@ -76,7 +76,7 @@ def crearProducto(Id):
                while id_prod in l:
                    id_prod = random.randint(1000, 9999)
                if(id_prod not in l):
-                   sql = "INSERT INTO producto (Prod_Id, Nombre, Cantidad, Precio, Id_Cate, pastelero_CedulaPanadero) VALUES (%s, %s, %s, %s, %s, %s)"
+                   sql = "INSERT INTO producto (Prod_Id, Nombre, Canti, Precio, Id_Cate, pastelero_CedulaPanadero) VALUES (%s, %s, %s, %s, %s, %s)"
                    val = (id_prod, Nombre, Canti, Precio, Categoria, Id)
                    c.execute(sql, val)
                    m.commit()
